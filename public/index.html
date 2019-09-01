@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<title>SVG</title>
+</head>
+<body>
+<div class="container">
+	<div class="container__header">
+		<h1>SVG Paint</h1>
+	</div>
+	<div class="container__tools">
+		<p>Select color: <input id="color" type="color"></p>
+		<div class="container__slider">
+			<p>Select line thickness: <input type="range" id="width" min="1" max="10" class="slider" ></p>
+		</div>
+	</div>
+	<div class="container__svg">
+		<svg id="svg" width="1280" height="720" class="container__svg-class"></svg>
+	</div>
+</div>
+<script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
